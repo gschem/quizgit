@@ -1,0 +1,165 @@
+body {
+    box-sizing: border-box;
+    background: black;
+    background: url(../img/theWall.jpg);
+    background-size: cover;
+    font-family: 'Inconsolata', monospace;
+    
+    
+  }
+  
+  legend {
+    color: white;
+  }
+  .container {
+    max-width: 600px;
+    min-height: 580px;
+    border-radius: 5px;
+  }
+  
+  .js-hidden {
+    display: none;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  
+  .container-box {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .row-box {
+    background: black;
+    color: white;
+    min-width: 100%;
+    padding: 60px 0 0;
+  }
+  
+  .main-content {
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+  
+  .img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  
+  .form-check {
+    border: 1px solid black;
+  }
+  
+  .form-check:first-child {
+    border-top: 1px solid black;
+  }
+  
+  .form-check:last-child {
+    border-bottom: none;
+  }
+  
+  .form-check:focus-within, .form-check:active, .form-check:focus, .form-check:visited {
+    background: black;
+  }
+  .form-check:hover {
+    background: grey;
+  }
+  
+  .form-check-label {
+    min-width: 85%;
+    padding: 20px;
+  }
+  
+  input[type="radio"]{
+    float: left;
+    border: 1px solid black;
+  }
+  
+  label {
+    margin: 0;
+  }
+  
+  .form-group {
+      padding-bottom: 0;
+      margin-bottom: 0;
+  }
+  
+  
+  .question-number p {
+    float: left;
+    width: 33%;
+  }
+  
+  .current-score p  {
+    float: right;
+    width: 33%;
+  }
+  
+  .question-score {
+      padding: 10px;
+  }
+  
+  /*********************************
+  **  BUTTONS
+  **********************************/
+  .btn {
+    width: 75%;
+    background: #231358;
+    border-radius: 5px;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .btn:hover {
+    color: white;
+    background-color: grey;
+    border: none;
+  }
+  
+  .btn:active {
+    color: grey;
+    background-color: #070721;
+    border: none;
+  }
+  /*********************************
+  **  MOBILE SETTINGS
+  **********************************/
+  @media (max-width: 414px) {
+    body {
+      background: white;
+       background: url(../img/theWall.jpg) no-repeat center center fixed;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .row-box {
+      padding-top: 0;
+      box-shadow: none;
+    }
+    .img {
+      max-width: 150px;
+      border: 2px, white;
+    }
+    .btn {
+      width: 75%;
+    }
+    #js-question-form .btn  {
+      min-width: 100% !important;
+    }
+    #js-start-button, #js-next-button, #js-finish-button, #js-restart {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
